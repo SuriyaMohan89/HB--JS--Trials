@@ -8,7 +8,7 @@ let businessName = "Balloonicorn's Cupcake Shop";
 
 const addresses = ["123 Main Street", "683 Sutter Street", "1600 Pennsylvania Ave"];
 
-const phoneNumbers = new Map([['home','510-867-5309'],'[mobile', '415-555-1212'],
+const phoneNumbers = new Map([['home','510-867-5309'],['mobile', '415-555-1212'],
                                  ['business', '415-123-4567']]);
 
 // Add some phone numbers to our map
@@ -18,7 +18,18 @@ const phoneNumbers = new Map([['home','510-867-5309'],'[mobile', '415-555-1212']
 // ///////////////////////////////////////////////////////
 // Create User Info Display:
 
+
 // Add function to print account information 
+function showInfo(accountHolder,accountNumber,businessName) {
+   
+   console.log(`Account Holder Name : ${accountHolder}`);
+   console.log(`Account Holder Number : ${accountNumber}`);
+   console.log(`Business Name : ${businessName}`);
+
+
+}
+
+//showInfo( "Balloonicorn", "123456", "Balloonicorn's Cupcake Shop" )
 
 
 // Add function to print all addresses, including a header
