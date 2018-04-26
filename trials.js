@@ -84,7 +84,21 @@ function showBalanceStatus(balance){
 }
 
 // Add function to show transactions
-
+function showTransactions(startingBalance, transactions) {
+	let balance = startingBalance;
+	console.log("Starting balance:", startingBalance);
+	for (let [date, transaction] of transactions) {
+		console.log(date);
+		if (transaction < 0) {
+			console.log("Transaction type: Withdrawal");
+		} else {
+			console.log("Transaction type: Deposit");
+		}
+		console.log("Amount changed:", transaction);
+		balance += transaction;
+		console.log("Balance:", balance);
+	}
+}
 
 // ///////////////////////////////////////////////////////
 // All Customer Info:
