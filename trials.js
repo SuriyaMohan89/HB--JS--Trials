@@ -55,16 +55,33 @@ function  showPhoneNums(phoneNumbers) {
 // Transactions:
 
 // Create an empty map of transactions
-
+let transactions = new Map();
 
 // Add function to add transactions
+function addTransaction(date, amount) {
 
+	transactions.set(date, amount);
+}
 
 // Use the function to add transactions
+addTransaction('May-2', -500);
+addTransaction('May-13', 1200);
+addTransaction('May-15', -100);
+addTransaction('May-21', -359);
+addTransaction('May-29', 2200);
 
 
 // Add function to show balance status
+function showBalanceStatus(balance){
 
+	if (balance < 0){
+		console.log(`YOU ARE OVERDRAWN`);
+	} else if (balance < 20) {
+		console.log(`Warning: You are close to zero balance`);
+	} else {
+		console.log(`Thank you for your business.`);
+	}
+}
 
 // Add function to show transactions
 
