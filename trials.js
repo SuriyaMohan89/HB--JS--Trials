@@ -29,13 +29,26 @@ function showInfo(accountHolder,accountNumber,businessName) {
 
 }
 
-//showInfo( "Balloonicorn", "123456", "Balloonicorn's Cupcake Shop" )
-
-
 // Add function to print all addresses, including a header
+
+function showAddresses(addresses) {
+	console.log('Addresses:')
+	for (let address of addresses) {
+		console.log(address);
+	}
+}
 
 
 // Add function to print phone types and numbers
+
+function  showPhoneNums(phoneNumbers) {
+
+	console.log('Phone Numbers:')
+	for (let [type,number] of phoneNumbers) {
+		console.log(`${type}: ${number}`);
+	}
+
+}
 
 
 // ///////////////////////////////////////////////////////
